@@ -55,11 +55,11 @@ makeCacheMatrix <- function(x = matrix())
 # Also the matrix stored in object 'x' has to be square and invertible,
 # so that the inverse matrix can be computed.
 #
-# If it is the first time this function is executed, since
-# the creation of the 'x' matrix or since execution of function
-# x$set(y), cacheSolve will calculate the inverse of 'x' and will store
-# it in 'x'. Othewise, cacheSolve will skip inverse calculation and 
-# simply return the inverse matrix already stored in 'x'.
+# If it is the first time this function is executed, since the creation
+# of the 'x' matrix or since execution of function x$set(y), cacheSolve
+# will calculate the inverse of 'x' and will store it in 'x'. Othewise,
+# cacheSolve will skip inverse calculation and simply return the 
+# inverse matrix already stored in 'x'.
 cacheSolve <- function(x, ...)
 {
   # Gets the inverse matrix stored in 'x'
